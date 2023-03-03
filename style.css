@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #777277;
+
+
+
+}
+
+p {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+li {
+    list-style: none;
+    margin: 20px 0;
+    padding: 15px;
+    word-wrap: break-word;
+    font-family: 'Roboto', Courier, monospace;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(36, 33, 33);
+
+    /* Glassmorphism */
+    backdrop-filter: blur(12px) saturate(117%);
+    -webkit-backdrop-filter: blur(12px) saturate(117%);
+    background-color: rgba(90, 132, 211, 0.5);
+    border-radius: 12px;
+    border: 2px solid rgba(182, 170, 170, 0.125);
+
+    /* Box Shadow */
+    -webkit-box-shadow: -9px 10px 18px -5px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: -9px 10px 18px -5px rgba(0, 0, 0, 0.26);
+    box-shadow: -9px 10px 18px -5px rgba(0, 0, 0, 0.26);
+
+}
+
+.title {
+    font-family: 'Tilt Warp', Courier, monospace;
+    font-weight: 400;
+    font-size: 27px;
+    color: rgb(51, 49, 49);
+}
+
+.input-tarefa {
+    margin-left: 3px;
+    margin-right: 18px;
+    width: 15rem;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(155, 144, 144);
+}
+
+.btn-tarefa {
+    width: 33px;
+    height: 33px;
+    border-radius: 5px;
+    border: none;
+}
+
+.container {
+    width: 20rem;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+
+    /* Background */
+    background-color: #74EBD5;
+    background-image: linear-gradient(45deg, #74EBD5 0%, #9FACE6 100%);
+
+    /* Box Shadow */
+    -webkit-box-shadow: -9px 10px 18px -5px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: -9px 10px 18px -5px rgba(0, 0, 0, 0.26);
+    box-shadow: -9px 10px 18px -5px rgba(0, 0, 0, 0.26);
+
+}
+
+.apagar {
+    margin: 20px 13px 13px 13px;
+    border-radius: 60px;
+    font-size: 14px;
+    padding-bottom: 2px;
+    border: none;
+
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+
+    cursor: pointer;
+
+    width: 25px;
+    height: 25px;
+
+    position: absolute;
+    left: 18.2rem;
+}
+
+@media screen and (max-width: 600px) {
+    .input-tarefa {
+        width: 14rem;
+    }
+
+    .container {
+        width: 18rem;
+    }
+
+    .apagar {
+        left: 16rem;
+    }
+}
